@@ -1,0 +1,55 @@
+a{
+  text-decoration:none;
+}
+.inicsectl{
+	color: #00adee;
+    font-size: 22px;
+}
+.roundlogin{
+		border-radius: 20px;
+}
+.roundlogin .card-text .card-text{
+	font-size: 11px;
+    font-weight: bold;
+}
+.roundlogin .card-text .card-text a{
+	color: #00adee;
+}
+.roundeded{
+	border-radius: 20px;
+	font-size: 15px;
+  border: 0px;
+}
+.roundlogin input[type="email"],
+.roundlogin input[type="password"],
+.roundlogin input[type="text"],
+.roundlogin input[type="date"],
+.roundlogin input[type="number"],
+.roundlogin select,
+.roundlogin textarea{
+	background-color:#f5f5f5;
+	/* color:white; */
+  border-radius: 20px;
+  font-size: 15px;
+  border: 0px;
+}
+.butn{
+	width:100%;
+	background-color:#00adee;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin:10px 0px 25px 0px;
+}
+/*****Register*******/
+.imagbak{
+  background-image:url(~assets/siteImages/2019-07-05.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.roundlogin .bday{
+  width: 62px;
+  padding: 10px;
+  border-radius: 2px;
+}
