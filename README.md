@@ -56,14 +56,11 @@ rm -rf public/index.html public/404.html /**/
 npm install vue-router
 ```
 
-5. Copy and merge dependencies:
-
-```
-cp /folder/src/package.json to /folder/functions/package.json
-```
+5. Copy and merge dependencies from /folder/src/package.json to /folder/functions/package.json
 
 *I just copy and paste the dependencies that aren't in functions/package.json.
-This file must have the libraries you use in your Nuxt.js app.*
+This file must have the libraries you use in your Nuxt.js app. You must end up
+with something like this:*
 
 ```
 /folder/functions/package.json
@@ -80,14 +77,13 @@ This file must have the libraries you use in your Nuxt.js app.*
             },
             ...
 ```
+*Or you can simply install every dependency with npm install*
 
-6. Install all packages on /folder/functions/ run:
+6. Install all packages on /folder/functions/, run:
 
 ```
 npm install
 ```
-
-
 
 7. Add to /folder/functions/nuxt.config.js:
 
@@ -103,7 +99,7 @@ build: {
 8. On /folder/ run:
 
 ```
-copy - R src/nuxt.config.js to functions/
+copy -R src/nuxt.config.js to functions/
 ```
 
 9. Building app /folder/src/:
@@ -167,12 +163,22 @@ key with configuration keys at the root level of firebase.json.
 Error: Hosting key and legacy hosting keys are both present in firebase.json.
 Having trouble? Try firebase serve --help"*
 
-**Execute the command "firebase tools:migrate"and select yes.
+**Execute the command "firebase tools:migrate"and select yes.**
 
-13. Finally deploy your project, on /folder/ run:
 
+14. Finally deploy your project, on /folder/ run:
+```
+On /folder/functions/index.js
+    change  publicPath:'/public/' with publicPath:'/'
+On /folder/functions/nuxt.config.js
+    change  publicPath:'/public/' with publicPath:'/'
+On /folder/src/nuxt.config.js
+    change  publicPath:'/public/' with publicPath:'/'
+```
+Then repeat steps **10** and **11** and finaly
 ```
 firebase deploy
 ```
 
-Then hould deploy project on firehost.
+Then you should be able deploy and see  your project on firehost. YAY!
+https://bit.ly/IqT6zt
