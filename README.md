@@ -1,4 +1,4 @@
-# Nuxt-2-firehost
+# Nuxt.js 2 firehost 2019
 #How to deploy nuxt2 ssr on firehost July 2019
 
 Base on this tutorial(https://bit.ly/2LsdCnY) I wasn't able to deploy nuxt.js 2 ssr on firebase hosting.
