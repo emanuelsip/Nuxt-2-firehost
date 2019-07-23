@@ -175,4 +175,4 @@ Having trouble? Try firebase serve --help"*
 firebase deploy
 ```
 
-With all steps should deploy project, on firehost.
+Then hould deploy project on firehost.
